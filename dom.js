@@ -23,7 +23,9 @@ var _dom = (function() {
                     page.injectJs("jquery.min.js");
                     page.evaluate(function(url, dom) {
                         if($(dom).length === 0) {
-                            console.log("No match!!!");
+                            console.log("URL: |" + url + '|'
+                                    + "\nDOM: |" + dom + '|'
+                                    + "\nNO MATCH!!!");
                             return;
                         }
 
